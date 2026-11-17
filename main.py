@@ -7,15 +7,15 @@ from renderer import draw
 #pygame setup
 
 pygame.init()
-# WORLD_WIDTH = 5000
-# WORLD_HEIGHT = 5000
+WORLD_WIDTH = 5000
+WORLD_HEIGHT = 5000
 width = 1280
 height = 720
 # mouse_object = pygame.mouse.get_pos()
 
 half_width = width / 2
 half_height = height / 2
-screen = pygame.display.set_mode((width,height))
+screen = pygame.display.set_mode((width,height)) # actual screen size
 clock = pygame.time.Clock()
 running = True
 asset_manage = Asset_Manager()
@@ -48,7 +48,7 @@ while running:
     pygame.draw.rect(screen, "green", (half_width - 300 ,half_height - 300,600,600))
     # attempting to draw trees
     for flora in world_generation.flora:
-        draw(flora, screen)
+        draw(flora, screen,asset_manage)
     # screen.blit(asset_manage.img_small,(350,350))
 
     # flip() the display to put your work on screen

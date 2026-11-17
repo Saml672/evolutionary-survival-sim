@@ -3,8 +3,8 @@ FEATURES TO ADD:
     - make camera interactable (mouse drag around and allow zooming in and out)
     (FLORA)
     - add rocks (so they can craft weapons.)
+    
     (FEATURES)
-    - Trees have random range of wood (5-10)
     - Wood can be used to make starter weapons and tools
     - add deer (they eat berries) / (simple lifecycle)
     (UI)

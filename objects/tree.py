@@ -6,7 +6,7 @@ class Tree:
         # self.x = x
         # self.y = y
         self.location = (x,y)
-        self.image_size = pygame.transform.scale(assets.tree_img, (size, size))
+        self.image = pygame.transform.scale(assets.tree_img, (size, size))
         self.wood = random.randint(3,12)
         self.radius = 50
         # self.texture = 

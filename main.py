@@ -1,6 +1,6 @@
 import pygame
 from asset_manager import Asset_Manager
-from tree import Tree
+from objects.tree import Tree
 from world_gen import World_Gen
 import random
 from renderer import draw

@@ -1,7 +1,7 @@
 import random
 import math
-from tree import Tree
-from berry_bush import BerryBush
+from objects.tree import Tree
+from objects.berry_bush import BerryBush
 # asset_manage = Asset_Manager()
 class World_Gen:
     def __init__(self, assets):
@@ -29,6 +29,7 @@ class World_Gen:
             grid[0][0] = tree_shrub
             self.trees.append(tree_shrub)
             self.flora.append(tree_shrub)
+            
         elif (random_flora == 2):
             berry_bush_shrub = BerryBush(flora_x, flora_y, 20, assets)
             grid[0][0] = berry_bush_shrub
@@ -46,7 +47,7 @@ class World_Gen:
                 object_y = flora_y + random.randint(-250,250)
                 counter = 0
                 for k in range(len(self.flora)):
-                    print(len(self.flora))
+                    
                     distance = math.sqrt((object_x - self.flora[k].location[0])**2 + (object_y - self.flora[k].location[1])**2)
                     if (distance > self.flora[k].radius):
                         counter += 1
@@ -57,6 +58,7 @@ class World_Gen:
                                 grid[i][j] = tree_shrub
                                 self.trees.append(tree_shrub)
                                 self.flora.append(tree_shrub)
+                                
                             elif (random_flora == 2):
                                 berry_bush_shrub = BerryBush(object_x, object_y, 20, assets)
                                 grid[0][0] = berry_bush_shrub

@@ -1,10 +1,10 @@
 import pygame
-from asset_manager import Asset_Manager
-from objects.tree import Tree
-from world_gen import World_Gen
-import renderer
-from world import World
-import controls
+from src.core.asset_manager import Asset_Manager
+from src.entities.objects.tree import Tree
+from src.world.world_gen import World_Gen
+import src.rendering.renderer as renderer
+from src.world.world import World
+import src.core.controls as controls
 #pygame setup
 
 pygame.init()

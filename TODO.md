@@ -1,6 +1,5 @@
 FEATURES TO ADD:
     (QOL)
-    - make camera interactable (mouse drag around and allow zooming in and out)
     (FLORA)
     - add rocks (so they can craft weapons.)
     

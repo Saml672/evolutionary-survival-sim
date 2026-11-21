@@ -1,7 +1,7 @@
 import random
 import math
-from objects.tree import Tree
-from objects.berry_bush import BerryBush
+from src.entities.objects.tree import Tree
+from src.entities.objects.berry_bush import BerryBush
 # asset_manage = Asset_Manager()
 class World_Gen:
     def __init__(self, assets):

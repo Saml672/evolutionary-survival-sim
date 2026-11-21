@@ -29,6 +29,6 @@ class World:
             # self.mouse_current_pos = (self.mouse_current_pos[0],self.mouse_current_pos[1])
             self.mouse_new_pos = self.mouse_current_pos
             
-            print(f"Offset X: {offsetX}, Offset Y: {offsetY}")
-            print(f"Camera: X: {self.camera[0]}, Camera Y: {self.camera[1]}")
+            # print(f"Offset X: {offsetX}, Offset Y: {offsetY}")
+            # print(f"Camera: X: {self.camera[0]}, Camera Y: {self.camera[1]}")
     

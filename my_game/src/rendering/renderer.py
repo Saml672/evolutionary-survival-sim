@@ -1,5 +1,5 @@
 
-from objects.berry_bush import BerryBush
+from src.entities.objects.berry_bush import BerryBush
 world_offset = [0,0]
 def draw_landmass(pygame,screen,world):
         world_offset[0] = (world.half_width - 300) - world.camera[0]
